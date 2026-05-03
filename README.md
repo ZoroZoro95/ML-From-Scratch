@@ -11,7 +11,18 @@
 
 > **"What I cannot create, I do not understand."** — *Richard Feynman*
 
-This repository is a journey through the fundamentals of Machine Learning, implementing core algorithms from the ground up using only **NumPy** and **Python**. No high-level libraries like Scikit-Learn or TensorFlow—just math and code.
+This repository is a journey through the fundamentals of Machine Learning, implementing core algorithms from the ground up using only **NumPy** and **Python**.
+
+---
+
+## 📖 Deep Dive & Documentation
+Looking for the math and detailed explanations? Check out our dedicated project wiki for in-depth breakdowns of every algorithm.
+
+<div align="center">
+  <a href="https://github.com/ZoroZoro95/ML-From-Scratch/wiki">
+    <img src="https://img.shields.io/badge/VIEW_PROJECT_WIKI-FF5722?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</div>
 
 ---
 
@@ -20,35 +31,10 @@ This repository is a journey through the fundamentals of Machine Learning, imple
 | Algorithm | Status | Complexity | Description |
 | :--- | :---: | :---: | :--- |
 | **Linear Regression** | ✅ | $O(n)$ | Simple Gradient Descent implementation for 1D features. |
+| **Multivariate Regression** | ✅ | $O(n \cdot d)$ | Linear Regression supporting multiple features using vectorization. |
 | **Logistic Regression** | 🛠️ | - | *Coming soon...* |
 | **K-Nearest Neighbors** | 🛠️ | - | *Coming soon...* |
 | **Neural Network** | 🛠️ | - | *Coming soon...* |
-
----
-
-## 📈 Featured: Linear Regression
-
-The current implementation features a **Linear Regression** model optimized via **Gradient Descent**.
-
-### 🧪 The Math
-We find the line $y = mx + b$ by minimizing the **Mean Squared Error (MSE)**:
-$$J(m, b) = \frac{1}{n} \sum_{i=1}^{n} (y_{pred} - y_{i})^2$$
-
-### 🛠️ Core Components
-- **Forward Pass**: $y_{pred} = mX + b$
-- **Loss Function**: Mean Squared Error
-- **Optimizer**: Vanilla Gradient Descent
-
-```python
-def gradient_descent(m, b, X, y, learning_rate):
-    # Calculate gradients
-    Dm = (2/n) * np.sum(X * error)
-    Db = (2/n) * np.sum(error)
-    # Update parameters
-    m = m - learning_rate * Dm
-    b = b - learning_rate * Db
-    return m, b
-```
 
 ---
 
@@ -68,13 +54,14 @@ pip install numpy matplotlib
 ### 3. Run the scripts
 ```bash
 python linear_regression.py
+python multivariate_linear_regression.py
 ```
 
 ---
 
 ## 🗺️ Roadmap
 - [x] Linear Regression (One Feature)
-- [ ] Multiple Linear Regression
+- [x] Multiple Linear Regression
 - [ ] Logistic Regression (Binary Classification)
 - [ ] K-Means Clustering
 - [ ] Decision Trees
