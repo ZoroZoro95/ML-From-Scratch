@@ -27,10 +27,7 @@ class Logistic_regression:
         for i in range(n):
             p = y_preds[i]
             p = max(min(p, 1 - 1e-10), 1e-10) # epsilon value to avoid log(0)
-            if y[i] == 1:
-                total += -math.log(p)
-            else:
-                total += -math.log(1 - p)
+            
         return total / n
 
 
