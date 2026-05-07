@@ -32,7 +32,7 @@ Looking for the math and detailed explanations? Check out our dedicated project 
 | :--- | :---: | :---: | :--- |
 | **Linear Regression** | ✅ | $O(n)$ | Simple Gradient Descent implementation for 1D features. |
 | **Multivariate Regression** | ✅ | $O(n \cdot d)$ | Linear Regression supporting multiple features using vectorization. |
-| **Logistic Regression** | 🛠️ | - | *Coming soon...* |
+| **Logistic Regression** | ✅ | $O(n \cdot d)$ | Binary classification using Gradient Descent and Cross-Entropy loss. |
 | **K-Nearest Neighbors** | 🛠️ | - | *Coming soon...* |
 | **Neural Network** | 🛠️ | - | *Coming soon...* |
 
@@ -62,7 +62,7 @@ python multivariate_linear_regression.py
 ## 🗺️ Roadmap
 - [x] Linear Regression (One Feature)
 - [x] Multiple Linear Regression
-- [ ] Logistic Regression (Binary Classification)
+- [x] Logistic Regression (Binary Classification)
 - [ ] K-Means Clustering
 - [ ] Decision Trees
 - [ ] Basic Neural Network (Backpropagation)
